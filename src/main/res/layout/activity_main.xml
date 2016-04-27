@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffffff" >
+
+    <include layout="@layout/layout_titlebar" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/lDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/layout_content"/>
+
+        </ScrollView>
+
+        <ExpandableListView
+            android:id="@+id/lvTree"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:padding="3dp"
+            android:background="#ffffff"
+            android:dividerHeight="1dp"
+            android:scrollbars="none"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

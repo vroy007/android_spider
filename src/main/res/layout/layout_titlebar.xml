@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="55dp"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="#000000">
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/ic_drawer"/>
+
+    <TextView
+        android:id="@+id/tv_toptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:text="华工电信学院"/>
+
+</LinearLayout>
