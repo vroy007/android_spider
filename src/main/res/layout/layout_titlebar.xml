@@ -14,12 +14,24 @@
 
     <TextView
         android:id="@+id/tv_toptitle"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="20dp"
         android:textColor="#ffffff"
         android:textSize="22sp"
-        android:text="华工电信学院"/>
+        android:text="华工电信学院"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/tvPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp"/>
 
 </LinearLayout>

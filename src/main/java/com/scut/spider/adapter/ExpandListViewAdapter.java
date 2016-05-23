@@ -31,11 +31,13 @@ public class ExpandListViewAdapter extends BaseExpandableListAdapter {
 
     public ExpandListViewAdapter(Context context) {
         this.context = context;
+        mInflater = LayoutInflater.from(context);
     }
 
     public ExpandListViewAdapter(Context context, ExpandableListView listView) {
         this.context = context;
         this.listView = listView;
+        mInflater = LayoutInflater.from(context);
     }
 
     public ExpandListViewAdapter(Context context, ExpandableListView listView, List<List<TeacherModel>> list) {
@@ -55,7 +57,7 @@ public class ExpandListViewAdapter extends BaseExpandableListAdapter {
 
     @Override
     public int getGroupCount() {
-        return list.size();
+        return list != null ? list.size() : 0;
     }
 
     @Override
@@ -148,9 +150,9 @@ public class ExpandListViewAdapter extends BaseExpandableListAdapter {
         @Override
         public void onClick(View v) {
             //TODO
-            /*String url = model.getUrl();
+            /*String url = model.getCountUrl();
             Toast.makeText(context, url, Toast.LENGTH_SHORT).show();*/
-            EventBus.getDefault().post(model);
+            //EventBus.getDefault().post(model);
         }
     }
 

@@ -13,15 +13,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <ScrollView
+        <com.scut.spider.components.RefreshListView
+            android:id="@+id/rlvMain"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="1dp"
+            android:divider="#490e060b"/>
 
-            <include layout="@layout/layout_content"/>
-
-        </ScrollView>
-
-        <ExpandableListView
+        <ListView
             android:id="@+id/lvTree"
             android:layout_width="240dp"
             android:layout_height="match_parent"

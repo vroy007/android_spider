@@ -3,7 +3,7 @@
     android:id="@+id/ll_list_item"
     android:layout_width="match_parent" android:layout_height="wrap_content"
     android:gravity="center"
-    android:padding="5dp"
+    android:padding="10dp"
     android:background="#ffffff">
 
     <TextView
@@ -11,7 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#1bbbab"
-        android:textSize="14sp"
-        android:text="xxx"/>
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="xxx"
+        android:singleLine="true"
+        android:ellipsize="end"/>
 
 </LinearLayout>

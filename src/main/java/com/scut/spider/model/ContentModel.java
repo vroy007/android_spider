@@ -1,5 +1,7 @@
 package com.scut.spider.model;
 
+import android.text.Spanned;
+
 /**
  * Created by victor on 2016/2/27.
  */
@@ -7,8 +9,9 @@ public class ContentModel {
 
     private String title;
     private String time;
-    private String url;
+    private String countUrl;
     private String content;
+    private Spanned htmlContent;
 
     public String getTitle() {
         return title;
@@ -26,12 +29,12 @@ public class ContentModel {
         this.time = time;
     }
 
-    public String getUrl() {
-        return url;
+    public String getCountUrl() {
+        return countUrl;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setCountUrl(String countUrl) {
+        this.countUrl = countUrl;
     }
 
     public String getContent() {
@@ -42,13 +45,22 @@ public class ContentModel {
         this.content = content;
     }
 
+    public Spanned getHtmlContent() {
+        return htmlContent;
+    }
+
+    public void setHtmlContent(Spanned htmlContent) {
+        this.htmlContent = htmlContent;
+    }
+
     @Override
     public String toString() {
         return "ContentModel{" +
                 "title='" + title + '\'' +
                 ", time='" + time + '\'' +
-                ", url='" + url + '\'' +
+                ", countUrl='" + countUrl + '\'' +
                 ", content='" + content + '\'' +
+                ", htmlContent=" + htmlContent +
                 '}';
     }
 }
